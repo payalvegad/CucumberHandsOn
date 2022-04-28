@@ -1,0 +1,133 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-28T10:29:59.433Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5273093000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksclass.init()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify Login page for the application",
+        "description": "",
+        "id": "signin-feature;verify-login-page-for-the-application;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1280492900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksclass.afterannotation()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3855276600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Logged In",
+            "match": {
+              "location": "mainClass.user_navigated_to_the_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11741309500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter Username \"admin\" and Password \"Admin@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"Admin@123\"",
+                  "offset": 36
+                }
+              ],
+              "location": "mainClass.enter_Username_and_password(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 232923900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Logged in to the Home page",
+            "match": {
+              "location": "mainClass.user_navigated_to_the_Homepage_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32265195500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "New Coupon Created",
+            "match": {
+              "location": "mainClass.couponCreation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22659426500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Coupon Validated then Edited",
+            "match": {
+              "location": "mainClass.couponCreationValidation()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10618337300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Coupon Deleted",
+            "match": {
+              "location": "mainClass.DeleteCoupon()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Signin feature",
+    "description": "",
+    "id": "signin-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Retail.feature",
+    "tags": []
+  }
+]
